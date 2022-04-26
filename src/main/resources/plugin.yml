@@ -1,0 +1,12 @@
+name: Teleporting
+version: '${project.version}'
+main: tpplugin.TpPlugin
+api-version: 1.18
+load: STARTUP
+authors: [ Francisco Braço-Forte ]
+description: Players teleport.
+
+commands:
+  tp:
+    description: Teleports to a player, given his username.
+    usage: /<command> [player username]
