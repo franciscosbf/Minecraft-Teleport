@@ -17,7 +17,7 @@ public final class TpPlugin extends JavaPlugin {
         logger.info("Loading commands...");
 
         // commands registration.
-        getCommand("tp").setExecutor(new TpCommand());
+        getCommand(TpCommand.NAME).setExecutor(new TpCommand());
     }
 
     @Override

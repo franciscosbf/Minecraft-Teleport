@@ -3,10 +3,11 @@ version: '${project.version}'
 main: tpplugin.TpPlugin
 api-version: 1.18
 load: STARTUP
-authors: [ Francisco Braço-Forte ]
+authors: [Francisco Braço-Forte]
 description: Players teleport.
 
 commands:
-  tp:
+  teleport:
+    aliases: [tp]
     description: Teleports to a player, given his username.
     usage: /<command> [player username]

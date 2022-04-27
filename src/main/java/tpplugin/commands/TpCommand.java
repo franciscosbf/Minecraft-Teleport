@@ -10,6 +10,8 @@ import util.CommStatus;
 import util.FmtMsg;
 
 public class TpCommand implements CommandExecutor {
+    public static final String NAME = "teleport";
+
     public TpCommand() { }
 
     @Override
