@@ -9,13 +9,15 @@ import org.bukkit.entity.Player;
 import util.CommStatus;
 import util.FmtMsg;
 
+import javax.annotation.Nonnull;
+
 public class TpCommand implements CommandExecutor {
     public static final String NAME = "teleport";
 
     public TpCommand() { }
 
     @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+    public boolean onCommand(@Nonnull CommandSender sender, @Nonnull Command command, @Nonnull String label, @Nonnull String[] args) {
         if (sender instanceof Player) {
             Player player = (Player) sender;
 
